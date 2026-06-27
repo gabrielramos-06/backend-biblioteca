@@ -8,7 +8,7 @@ import br.edu.biblioteca.model.Emprestimo;
 
 public class TelaEmprestimos {
     
-    // Troque a declaração para garantir que ela nunca seja nula:
+   
 public static List<Emprestimo> listaEmprestimos = new ArrayList<>();
 
     public static void exibir(Scanner scanner) {
