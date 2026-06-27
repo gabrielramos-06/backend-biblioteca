@@ -9,7 +9,7 @@ public class LivroRepository {
 
     public void salvarTodos(List<Livro> livros) {
         List<String> dadosCSV = new ArrayList<>();
-        // Cabeçalho opcional
+        
         dadosCSV.add("ISBN;Titulo;Ano");
 
         for (Livro livro : livros) {
@@ -24,7 +24,7 @@ public class LivroRepository {
         List<String> dadosCSV = FileStorage.carregarDados(ARQUIVO);
         List<Livro> livros = new ArrayList<>();
 
-        // Ignora a primeira linha se for cabeçalho
+        
         for (int i = 1; i < dadosCSV.size(); i++) {
             String[] colunas = dadosCSV.get(i).split(";");
             try {
